@@ -11,7 +11,7 @@ namespace WishList.Models
         public int Id { get; set; }
         
         [Required(ErrorMessage = "Please enter a description")]
-        [StringLength(50)]
+        [MaxLength(50)]
         public string Description { get; set; }
 
     }
